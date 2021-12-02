@@ -1,0 +1,118 @@
+body {
+    background-color: grey;
+}
+
+.bigboi {
+    width: 100%;
+    height: 500px;
+    background: green;
+}
+
+.box1 {
+    width: 50%;
+    height: 450px;
+    background: hotpink;
+    float: left;
+}
+
+.box2 {
+    width: 50%;
+    height: 450px;
+    background: hotpink;
+    float: left;
+}
+
+.minibox1 {
+    width: 100px;
+    height: 100px;
+    background: lightskyblue;
+    margin: 50px auto;
+    animation-name: mini-square-to-circle;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: #ffa07a;
+    margin: 200px auto;
+    animation-name: square-to-circle;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background: lightskyblue;
+    margin: 50px auto;
+    animation-name: mini-square-to-circle;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes square-to-circle {
+    0% {
+        border-radius: 0;
+        background: lightsalmon;
+        transform: rotate(0deg);
+    }
+    25% {
+        border-radius: 50% 0 0 0;
+        background: darksalmon;
+        transform: rotate(45deg);
+    }
+    50% {
+        border-radius: 50% 50% 0 0;
+        background: salmon;
+        transform: rotate(90deg);
+    }
+    75% {
+        border-radius: 50% 50% 50% 0;
+        background: darksalmon;
+        transform: rotate(135deg);
+    }
+    100% {
+        border-radius: 50%;
+        background: lightsalmon;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes mini-square-to-circle {
+    0% {
+        border-radius: 0;
+        background: lightskyblue;
+        transform: rotate(0deg);
+    }
+    25% {
+        border-radius: 50% 0 0 0;
+        background: deepskyblue;
+        transform: rotate(45deg);
+    }
+    50% {
+        border-radius: 50% 50% 0 0;
+        background: blue;
+        transform: rotate(90deg);
+    }
+    75% {
+        border-radius: 50% 50% 50% 0;
+        background: deepskyblue;
+        transform: rotate(135deg);
+    }
+    100% {
+        border-radius: 50%;
+        background: lightskyblue;
+        transform: rotate(180deg);
+    }
+}
