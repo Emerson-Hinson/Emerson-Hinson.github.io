@@ -3,6 +3,7 @@ list-style-type: none;
 margin: 0;
 padding: 0;
 overflow: hidden;
+background-color: orchid;
 }
 
 li {
@@ -11,6 +12,20 @@ li {
 
 li a {
     display: block;
+    color: white;
+    text-align: center;
     padding: 8px;
-    background-color: cadetblue;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: darkorchid
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background: white;
 }
