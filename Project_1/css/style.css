@@ -38,3 +38,31 @@ body {
     background: white;
     padding: 20px;
 }
+
+.button {
+    background: cornflowerblue;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    padding: 1em 1em;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  /*Used a w3schools thing for the image centering*/
+
+  footer {
+      text-align: center;
+      background: darkorchid;
+      color: white;
+      padding: 30px;
+  }
+
+  .active, .li:hover {
+      background: cornflowerblue;
+  }
