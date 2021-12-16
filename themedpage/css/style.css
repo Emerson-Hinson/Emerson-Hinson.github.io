@@ -3,9 +3,13 @@
     bottom: 0;
     background: #f1f1f1;
     color: #ff5656;
-    width: 100%;
-    padding: 20px;
+    width: 94%;
+    height: 175px;
+    padding: 1px;
     opacity: 75%;
+    border: green double;
+    border-width: 30px;
+    text-align: center;
   }
 
 #spin {
@@ -15,3 +19,40 @@
     min-width: 100%;
     min-height: 100%;
   }
+
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1 {
+      font-size: 35px;
+      text-align: center;
+  }
+
+  p {
+      font-size: 15px;
+      text-align: center;
+  }
+
+.holly1 {
+    height: 10px;
+    width: 30%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 150px;
+}
+
+.holly2 {
+    height: 10px;
+    width: 40%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 150px;
+}
+
+.textbox {
+    width: 100%;
+    text-align: center;
+}
