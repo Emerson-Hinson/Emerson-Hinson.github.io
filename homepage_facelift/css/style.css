@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+/*rgb(3, 103, 165)*/
+/*rgba(233, 198, 166, 0.767)
+
+rgb(83, 73, 60)
+
+rgb(114, 99, 81)
+
+rgb(99, 87, 72)*/
+h1 {
+    font-size: 3.5vw;
+    font-family: freude,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 1.8vw;
+    font-family: freude,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*h3 {
+    font-size: 1.8vw;
+    font-family: freude,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}*/
+
+a {
+    font-size: 1.8vw;
+    font-family: freude,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-size: 1.6vw;
+    font-family: duper,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.header {
+    background-color: rgb(3, 103, 165, 0.692);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive elements */
+.left {
+    float: left;
+    width: 20%;
+}
+
+.belowleft {
+    background-color: rgba(3, 103, 165);
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    padding: 9px;
+}
+
+.main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.right {
+    text-align: center;
+    float: left;
+    width: 20%;
+    background-color: rgb(3, 103, 165);
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.right a {
+    text-decoration: none;
+}
+
+/* Nav Style */
+.nav a {
+    background-color: rgb(3, 103, 165);
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 9px;
+}
+
+/* footer style */
+.footer {
+    background-color: rgb(3, 103, 165, 0.692);
+    color: white;
+    padding: 10px;
+    clear: both;
+}
+
+footer {
+    width: 60%;
+    margin: 0 auto;
+    font-family: duper,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media only screen and (max-width:620px) {
+    .left, .belowleft, .main, .right {
+        width: 100%;
+    }
+}
+
+@media (min-width:621px) and (max-width:1000px) {
+    .main {
+        width: 80%;
+    }
+    .right {
+        width: 100%;
+    }
+}
+
+.smalltext {
+    font-size: 1vw;
+    font-family: duper,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fas {
+    color: white;
+}
+
+img {
+    width: 60%;
+    height: 30%;
+  }
