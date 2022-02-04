@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Cursor Demo</title>
+    <link rel="stylesheet" href="scss/style.scss">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Custom Cursors</h1>
+        <h4>Today, I will show you how to change the normal cursor for your website into a custom one!</h4>
+    
+        <hr>
+    
+        <h2>Let's first take a look at the simplest way</h2>
+        <p>To make a custom cursor for the entire web page, you would use an image. This would require making a class and then making a CSS entry that looks like this:</p>
+        <pre>
+            <code>
+                .module {
+                    cursor: url('path-to-image.png'), auto;	
+                  }
+            </code>
+        </pre>
+        <p>This is how the cursor for this web page is a planet, but here's the specific code:</p>
+        <pre>
+            <code>
+                body {
+                    cursor: url("../images/planet.png"), auto;	
+                  }
+                
+            </code>
+        </pre>
+        <p>Applying the CSS to the body tag makes the cursor change for the whole page.</p>
+    
+        <hr>
+        
+        <h2>But what if you want to change the cursor only when hovering over one element?</h2>
+
+        <p>It would look a little something like this:</p>
+
+        <form>
+            <h1>How are you feeling today?</h1>
+            <input class="hide" type="checkbox" title="Happy" name="happy">
+            <label for="happy" class="option-happy">Happy</label>
+            
+            <input class="hide" type="checkbox" title="Sad" name="sad">
+            <label for="sad" class="option-sad">Sad</label>
+            
+            <input class="hide" type="checkbox" title="Meh" name="meh">
+            <label for="meh" class="option-meh">Meh</label>
+        </form>
+
+        <p>The code for this Happy/Sad example is as follows (but without the first left angle brackets of each line):</p>
+        <pre>
+            <code>
+                h1>How are you feeling today?</h1>
+                input class="hide" type="checkbox" title="Happy" name="happy">
+                label for="happy" class="option-happy">Happy</label>
+                
+                input class="hide" type="checkbox" title="Sad" name="sad">
+                label for="sad" class="option-sad">Sad</label>
+                
+                input class="hide" type="checkbox" title="Meh" name="meh">
+                label for="meh" class="option-meh">Meh</label>
+            </code>
+        </pre>
+        <p>And this is what the CSS looks like:</p>
+        <pre>
+            <code>
+                .option-happy {
+                    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+                  }
+                
+                  .option-sad {
+                    cursor: url("../images/sad.png"), auto;
+                  }
+                  
+                  .option-meh {
+                    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/meh.png"), auto;
+                  }
+                
+            </code>
+        </pre>
+        <p>This differs from the cursor for the whole page as these images were just connected to a class that would connect to a specific element</p>
+
+    </div>
+    
+</body>
+</html>
