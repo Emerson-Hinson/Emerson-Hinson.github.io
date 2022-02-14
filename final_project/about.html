@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emerson95</title>
+    <title>Emerson95 | About</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/uzl5mpz.css">
 </head>
 <body onload="startTime()">
     
-    <div class="bar">
+    <div class="bar" id="endit4">
         <button id="start" class="startBefore" onclick="myFunction()">Start</button>
         <div id="clock"></div>
         <div class="footer">
@@ -18,25 +18,31 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="endit3">
 
         <figure>
-            <img src="images/empty_bin_icon.png" alt="empty_bin_icon">
+            <img src="images/empty_bin_icon.png" alt="empty_bin_icon"  id="buttonId">
             <figcaption>Exit</figcaption>
         </figure>
 
         <figure>
-            <img src="images/my_computer_icon_1.jpg" alt="my_computer_icon_1">
+            <a href="about.html">
+                <img src="images/my_computer_icon_1.jpg" alt="my_computer_icon_1">
+            </a>
             <figcaption  style="padding-top: 4px;">About</figcaption>
         </figure>
 
         <figure>
-            <img src="images/the_internet_icon.png" alt="the_internet_icon">
+            <a href="case_study.html">
+                <img src="images/the_internet_icon.png" alt="the_internet_icon">
+            </a>
             <figcaption>Case Study</figcaption>
         </figure>
 
         <figure>
-            <img src="images/closed_folder_icon.png" alt="closed_folder_icon">
+            <a href="portfolio.html">
+                <img src="images/closed_folder_icon.png" alt="closed_folder_icon">
+            </a>
             <figcaption>Portfolio</figcaption>
         </figure>
 
@@ -50,21 +56,22 @@
             <figcaption>Xtra</figcaption>
         </figure>
 
-        <div class="window">
-            <div class="blue">
-                <div class="welcome">
-                    <p class="wwe">Welcome <!----<button class="ex">&times;</button>--></p>
+        <div class="about_window">
+            <div class="window">
+                <div class="blue">
+                    <div class="welcome">
+                        <p class="wwe">About Me</p>
+                    </div>
+                    <div class="leave">
+                        <p class="ex"><a href="home.html" class="ex">X</a></p>
+                    </div>
                 </div>
-                <div class="leave">
-                    <p class="ex"><a href="home.html" class="ex">X</a></p>
+                <h1>Well Hello There!</h1>
+                <div class="white">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id veritatis accusamus minus saepe nisi quisquam animi beatae voluptatem perferendis, sunt, quas architecto. Sequi explicabo doloremque sit ratione obcaecati eum eius.</p>
                 </div>
-            </div>
-            <h1>Welcome to Emerson!</h1>
-            <div class="white">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id veritatis accusamus minus saepe nisi quisquam animi beatae voluptatem perferendis, sunt, quas architecto. Sequi explicabo doloremque sit ratione obcaecati eum eius.</p>
             </div>
         </div>
-
     </div>
 
         <script>
@@ -88,7 +95,18 @@ function checkTime(i) {
   if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
   return i;
 }
-        </script>
 
+            var eventListener = window.addEventListener ? "addEventListener" : "attachEvent";
+            var clickEvent = eventListener == "attachEvent" ? "onclick" : "click";
+
+            document.getElementById('buttonId')[eventListener](clickEvent, function(){
+            document.body.style.backgroundColor = "black";
+            var myobj = document.getElementById("endit3");
+            myobj.remove();
+            var myobj2 = document.getElementById("endit4");
+            myobj2.remove();
+            });
+        </script>
+    
 </body>
 </html>
