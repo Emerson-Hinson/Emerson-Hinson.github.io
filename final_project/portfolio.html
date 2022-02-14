@@ -10,8 +10,15 @@
 </head>
 <body onload="startTime()">
     
-    <div class="bar" id="endit8">
-        <button id="start" class="startBefore" onclick="myFunction()">Start</button>
+    <div class="bar" id="endit2">
+        <div class="dropup">
+            <button id="start" class="startBefore" onclick="button_press()">Contact</button>
+            <div class="dropup-content" id="porfavor3">
+              <a href="#">Contact Info</a>
+              <a href="#">Contact Info</a>
+              <a href="#">Contact Info</a>
+            </div>
+          </div>
         <div id="clock"></div>
         <div class="footer">
             <footer>Emerson Hinson | Footer or Whatever I Guess</footer>
@@ -79,6 +86,7 @@
             document.getElementById("start").style.borderLeftColor = "black";
             document.getElementById("start").style.borderBottomColor = "white";
             document.getElementById("start").style.borderRightColor = "white";
+            document.getElementById("porfavor3").style.display = "block";
             }
 
             function startTime() {
