@@ -44,23 +44,89 @@ body {
     user-select: none;
 }
 
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
 .footer {
     border-top: ridge 2px black;
     border-left: ridge 2px black;
     border-bottom: ridge 2px white;
     border-right: ridge 2px white;
-    background: white;
+    background: #e6e5e5;
     background-size: 17px 15px;
     text-align: center;
     font-weight: bolder;
     font-size: 12px;
-    width: 75%;
     height: 25px;
     float: left;
     padding-top: 5px;
-    margin-left: 7%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 34%;
     cursor: default;
     user-select: none;
+}
+
+.footer2 {
+  border-top: ridge 2px black;
+  border-left: ridge 2px black;
+  border-bottom: ridge 2px white;
+  border-right: ridge 2px white;
+  background: #e6e5e5;
+  background-size: 17px 15px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 12px;
+  height: 25px;
+  float: left;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 1%;
+  cursor: default;
+  user-select: none;
+}
+
+.footer3 {
+  border-top: ridge 2px black;
+  border-left: ridge 2px black;
+  border-bottom: ridge 2px white;
+  border-right: ridge 2px white;
+  background: #e6e5e5;
+  background-size: 17px 15px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 12px;
+  height: 25px;
+  float: left;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 1%;
+  cursor: default;
+  user-select: none;
+}
+
+.footer4 {
+  border-top: ridge 2px black;
+  border-left: ridge 2px black;
+  border-bottom: ridge 2px white;
+  border-right: ridge 2px white;
+  background: #e6e5e5;
+  background-size: 17px 15px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 12px;
+  height: 25px;
+  float: left;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 1%;
+  cursor: default;
+  user-select: none;
 }
 
 #clock {
