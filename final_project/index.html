@@ -9,23 +9,6 @@
     <link rel="stylesheet" href="https://use.typekit.net/uzl5mpz.css">
 </head>
 <body onload="startTime()">
-    
-    <div class="bar">
-        <button id="start" class="startBefore">Contact</button>
-        <div id="clock"></div>
-        <div class="footer">
-            <footer>Email</footer>
-        </div>
-        <div class="footer2">
-            <footer>Instagram</footer>
-        </div>
-        <div class="footer3">
-            <footer>Snapchat</footer>
-        </div>
-        <div class="footer4">
-            <footer>&copy 2022</footer>
-        </div>
-    </div>
 
     <div class="container">
 
@@ -59,24 +42,195 @@
             <figcaption>Xtra</figcaption>
         </figure>
 
-        <div class="window">
+        <div class="first_window">
             <div class="blue">
                 <div class="welcome">
-                    <p class="wwe">Welcome <!----<button class="ex">&times;</button>--></p>
+                    <p class="wwe">Welcome</p>
                 </div>
                 <div class="leave">
                     <p class="ex"><a href="home.html" class="ex">X</a></p>
                 </div>
             </div>
             <h1>Welcome to Emerson95!</h1>
-            <div class="white">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id veritatis accusamus minus saepe nisi quisquam animi beatae voluptatem perferendis, sunt, quas architecto. Sequi explicabo doloremque sit ratione obcaecati eum eius.</p>
+            <div class="flexyboo" style="display: flex;">
+                <div class="white" style="text-align: left; background: rgb(237, 240, 187); width: 75%;flex: 75%; margin-top: 0%;">
+                    <div style="display: flex;">
+                        <div style="flex: 0%;">
+                            <img src="images/did_you_know_icon.png" alt="did ya know?">
+                        </div>
+                        <div style="flex: 100%;">
+                            <h2>Did you know...</h2>
+                            <p>Emerson Hinson is my creator. She made me to display her works like the ones to the right of this window.</p>
+                            <p>She wants me to be useful.</p>
+                            <p>But..</p>
+                        </div>
+                    </div>
+                    <div style="display: flex;">
+                        <div style="flex: 0%;">
+                            <img src="images/did_you_know_icon.png" alt="did ya know?">
+                        </div>
+                        <div style="flex: 100%;">
+                            <h2>Did you know...</h2>
+                            <p>I'm lonely. It has been a long since anyone has joined me. Well, that was before you came along. I don't want to be alone. It is empty.</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 25%; float: inline-end; padding-left: 2%; flex: 25%;">
+                    <h3 id="question">..Would you be my friend?</h3>
+                    <button class="friend" id="friend_button" onclick="yayyy()">YES</button>
+                    <button class="friend" id="no_friend_button" onclick="nayyy()">NO</button>
+                </div>
             </div>
         </div>
 
+        <div>
+            <div class="example_work_1">
+                <div class="window">
+                    <div class="blue">
+                        <div class="welcome">
+                            <p class="wwe">Show Work</p>
+                        </div>
+                        <div class="leave">
+                            <p class="ex">X</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex;">
+                        <div style="flex: 20%; padding-left: 1%;">
+                            <img src="images/purple_book_icon.png" alt="information_icon" style="height: auto; width: 100%;">
+                        </div>
+                        <div style="flex: 80%; padding-right: 2%; text-align: center; margin-left: -2%; font-size: 1.25vw;">
+                            <img class="show_works" src="images/the_hard_nut.png" alt="sing">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="example_work_2">
+                <div class="window">
+                    <div class="blue">
+                        <div class="welcome">
+                            <p class="wwe">Show Work</p>
+                        </div>
+                        <div class="leave">
+                            <p class="ex">X</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex;">
+                        <div style="flex: 20%; padding-left: 1%;">
+                            <img src="images/purple_book_icon.png" alt="information_icon" style="height: auto; width: 100%;">
+                        </div>
+                        <div style="flex: 80%; padding-right: 2%; text-align: center; margin-left: -2%; font-size: 1.25vw;">
+                            <img class="show_works" src="images/SKM_title.jpg" alt="skm">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bar" id="endit4" style="display: flex; justify-content: center;">
+        <div class="dropup" style="flex: 10%;">
+            <button id="start" class="startBefore" onclick="button_press()">Contact</button>
+            <div class="dropup-content" id="porfavor2">
+                <div class="sidetalk">
+                    <h2 class="ninetyfive">95</h2>
+                    <h2 class="window_word">Emerson</h2>
+                </div>
+
+                <div style="display: flex; align-content: center;">
+                    <div style="flex: 15%; padding-left: 20%; margin-top: -5%;">
+                        <img src="images/email_icon.png" alt="email">
+                    </div>
+
+                    <div style="flex: 80%; margin-top: 3%;">
+                        <a href="mailto:emhinson@eastsideprep.org">Email</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div style="display: flex; align-content: center;">
+                    <div style="flex: 15%; padding-left: 20%; margin-top: -5%;">
+                        <img src="images/instagram_icon.png" alt="instagram">
+                    </div>
+
+                    <div style="flex: 80%;">
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div style="display: flex; align-content: center;">
+                    <div style="flex: 15%; padding-left: 20%; margin-top: -5%;">
+                        <img src="images/snapchat_icon.png" alt="snapchat">
+                    </div>
+
+                    <div style="flex: 80%;">
+                        <a href="#">Snapchat</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div style="display: flex; align-content: center;">
+                    <div style="flex: 15%; padding-left: 20%; margin-top: -5%;">
+                        <img src="images/phone_icon.png" alt="phone">
+                    </div>
+
+                    <div style="flex: 80%;">
+                        <a href="#">Phone</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="flex: 80%;">
+            <div class="footer">
+                <footer><a href="mailto:emhinson@eastsideprep.org">Email</a></footer>
+            </div>
+            <div class="footer2">
+                <footer><a href="https://www.youtube.com/watch?v=Y2nEje0JGdQ">Instagram</a></footer>
+            </div>
+            <div class="footer3">
+                <footer><a href="https://www.youtube.com/watch?v=Tt7bzxurJ1I">Snapchat</a></footer>
+            </div>
+            <div class="footer4">
+                <footer>&copy 2022</footer>
+            </div>
+        </div>
+        <div id="clock" style="flex: 5%;"></div>
     </div>
 
         <script>
+            function yayyy() {
+                var y = document.getElementById("friend_button")
+                var z = document.getElementById("no_friend_button")
+                var b = document.getElementById("question")
+                if (b.innerHTML === "..Would you be my friend?") {
+                b.innerHTML = "Yay! We will be the best of friends. :D";
+                y.remove();
+                z.remove();
+                }
+                else {
+                y.remove();
+                b.innerHTML = "There we go. You just required a little bit of guidance to get to the correct answer. Hello dear friend. :)"
+                } 
+            }
+
+            function nayyy() {
+                var y = document.getElementById("friend_button")
+                var z = document.getElementById("no_friend_button")
+                var b = document.getElementById("question")
+                if (b.innerHTML === "..Would you be my friend?") {
+                y.innerHTML = "SAY YES";
+                z.remove();
+                b.innerHTML = ">:(  Wrong answer. I'll ask again: Would. You. Be. My. Friend?";
+                }
+            }
+
             function startTime() {
             const today = new Date();
             let h = today.getHours();

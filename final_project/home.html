@@ -9,30 +9,6 @@
     <link rel="stylesheet" href="https://use.typekit.net/uzl5mpz.css">
 </head>
 <body onload="startTime()">
-    
-    <div class="bar" id="endit2">
-        <div class="dropup">
-            <button id="start" class="startBefore" onclick="button_press()">Contact</button>
-            <div class="dropup-content" id="porfavor">
-              <a href="#">Contact Info</a>
-              <a href="#">Contact Info</a>
-              <a href="#">Contact Info</a>
-            </div>
-          </div>
-        <div id="clock"></div>
-        <div class="footer">
-            <footer><a href="mailto:emhinson@eastsideprep.org">Email</a></footer>
-        </div>
-        <div class="footer2">
-            <footer><a href="https://www.youtube.com/watch?v=Y2nEje0JGdQ">Instagram</a></footer>
-        </div>
-        <div class="footer3">
-            <footer><a href="https://www.youtube.com/watch?v=Tt7bzxurJ1I">Snapchat</a></footer>
-        </div>
-        <div class="footer4">
-            <footer>&copy 2022</footer>
-        </div>
-    </div>
 
     <div class="container" id="endit">
 
@@ -73,13 +49,97 @@
         </figure>
     </div>
 
+    <div class="bar" id="endit2" style="display: flex; justify-content: center;">
+        <div class="dropup" style="flex: 10%;">
+            <button id="start" class="startBefore" onclick="button_press()">Contact</button>
+            <div class="dropup-content" id="porfavor1">
+                <div class="sidetalk">
+                    <h2 class="ninetyfive">95</h2>
+                    <h2 class="window_word">Emerson</h2>
+                </div>
+
+                <div style="display: flex; align-content: center;">
+                    <div style="flex: 15%; padding-left: 20%; margin-top: -5%;">
+                        <img src="images/email_icon.png" alt="email">
+                    </div>
+
+                    <div style="flex: 80%; margin-top: 3%;">
+                        <a href="mailto:emhinson@eastsideprep.org">Email</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div style="display: flex; align-content: center;">
+                    <div style="flex: 15%; padding-left: 20%; margin-top: -5%;">
+                        <img src="images/instagram_icon.png" alt="instagram">
+                    </div>
+
+                    <div style="flex: 80%;">
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div style="display: flex; align-content: center;">
+                    <div style="flex: 15%; padding-left: 20%; margin-top: -5%;">
+                        <img src="images/snapchat_icon.png" alt="snapchat">
+                    </div>
+
+                    <div style="flex: 80%;">
+                        <a href="#">Snapchat</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div style="display: flex; align-content: center;">
+                    <div style="flex: 15%; padding-left: 20%; margin-top: -5%;">
+                        <img src="images/phone_icon.png" alt="phone">
+                    </div>
+
+                    <div style="flex: 80%;">
+                        <a href="#">Phone</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="flex: 80%;">
+            <div class="footer">
+                <footer><a href="mailto:emhinson@eastsideprep.org">Email</a></footer>
+            </div>
+            <div class="footer2">
+                <footer><a href="https://www.youtube.com/watch?v=Y2nEje0JGdQ">Instagram</a></footer>
+            </div>
+            <div class="footer3">
+                <footer><a href="https://www.youtube.com/watch?v=Tt7bzxurJ1I">Snapchat</a></footer>
+            </div>
+            <div class="footer4">
+                <footer>&copy 2022</footer>
+            </div>
+        </div>
+        <div id="clock" style="flex: 5%;"></div>
+    </div>
+
         <script>
             function button_press() {
-            document.getElementById("start").style.borderTopColor = "black";
-            document.getElementById("start").style.borderLeftColor = "black";
-            document.getElementById("start").style.borderBottomColor = "white";
-            document.getElementById("start").style.borderRightColor = "white";
-            document.getElementById("porfavor").style.display = "block";
+            var c = document.getElementById("start")
+            var p = document.getElementById("porfavor1")
+            if (p.style.display === "none") {
+                c.style.borderTopColor = "black";
+                c.style.borderLeftColor = "black";
+                c.style.borderBottomColor = "white";
+                c.style.borderRightColor = "white";
+                p.style.display = "block";
+            }
+            else {
+                c.style.borderTopColor = "white"
+                c.style.borderLeftColor = "white";
+                c.style.borderBottomColor = "black";
+                c.style.borderRightColor = "black";
+                p.style.display = "none";
+            }
             }
 
 //I learned this from w3schools

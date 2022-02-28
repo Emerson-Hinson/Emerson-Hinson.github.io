@@ -9,30 +9,6 @@
     <link rel="stylesheet" href="https://use.typekit.net/uzl5mpz.css">
 </head>
 <body onload="startTime()">
-    
-    <div class="bar" id="endit4">
-        <div class="dropup">
-            <button id="start" class="startBefore" onclick="button_press()">Contact</button>
-            <div class="dropup-content" id="porfavor1">
-              <a href="#">Contact Info</a>
-              <a href="#">Contact Info</a>
-              <a href="#">Contact Info</a>
-            </div>
-          </div>
-        <div id="clock"></div>
-        <div class="footer">
-            <footer><a href="mailto:emhinson@eastsideprep.org">Email</a></footer>
-        </div>
-        <div class="footer2">
-            <footer><a href="https://www.youtube.com/watch?v=Y2nEje0JGdQ">Instagram</a></footer>
-        </div>
-        <div class="footer3">
-            <footer><a href="https://www.youtube.com/watch?v=Tt7bzxurJ1I">Snapchat</a></footer>
-        </div>
-        <div class="footer4">
-            <footer>&copy 2022</footer>
-        </div>
-    </div>
 
     <div class="container" id="endit3">
 
@@ -82,21 +58,159 @@
                         <p class="ex"><a href="home.html" class="ex">X</a></p>
                     </div>
                 </div>
-                <h1>Well Hello There!</h1>
-                <div class="white">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id veritatis accusamus minus saepe nisi quisquam animi beatae voluptatem perferendis, sunt, quas architecto. Sequi explicabo doloremque sit ratione obcaecati eum eius.</p>
+                <h1 style="font-size: 2.5vw;">Well Hello There!</h1>
+                <div class="white" style="display: flex;">
+                    <div style="flex: 70%;">
+                        <img class="head" src="images/headshot.jpg" alt="headshot">
+                    </div>
+                    <div style="flex: 120%;">
+                        <p id="about_words_1"></p>
+                        <p id="about_words_2"></p>
+                        <p id="about_words_3"></p>
+                        <p id="space" style="color: white; text-align: left; font-size: 1.25vw;">
+                         
+                         
+                            <br>
+                         
+                         
+                            <br>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pop" class="pop_window">
+            <div class="window">
+                <div class="blue">
+                    <div class="welcome">
+                        <p class="wwe">Information</p>
+                    </div>
+                    <div class="leave">
+                        <p class="ex" id="nonono" onclick="byebye()">X</p>
+                    </div>
+                </div>
+                
+                <div style="display: flex;">
+                    <div style="flex: 15%; padding-left: 1%;">
+                        <img src="images/information_icon.png" alt="information_icon" style="height: auto; width: 100%;">
+                    </div>
+                    <div style="flex: 90%; padding-right: 2%; text-align: center; margin-left: -2%; font-size: 1.25vw;">
+                        <p>My creator seems to want people to know things about her..</p>
+                        <p>I don't understand it.</p>
+                        <p>Maybe she is narcissistic.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="bar" id="endit4" style="display: flex; justify-content: center;">
+        <div class="dropup" style="flex: 10%;">
+            <button id="start" class="startBefore" onclick="button_press()">Contact</button>
+            <div class="dropup-content" id="porfavor2">
+                <div class="sidetalk">
+                    <h2 class="ninetyfive">95</h2>
+                    <h2 class="window_word">Emerson</h2>
+                </div>
+
+                <div style="display: flex; align-content: center;">
+                    <div style="flex: 15%; padding-left: 20%; margin-top: -5%;">
+                        <img src="images/email_icon.png" alt="email">
+                    </div>
+
+                    <div style="flex: 80%; margin-top: 3%;">
+                        <a href="mailto:emhinson@eastsideprep.org">Email</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div style="display: flex; align-content: center;">
+                    <div style="flex: 15%; padding-left: 20%; margin-top: -5%;">
+                        <img src="images/instagram_icon.png" alt="instagram">
+                    </div>
+
+                    <div style="flex: 80%;">
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div style="display: flex; align-content: center;">
+                    <div style="flex: 15%; padding-left: 20%; margin-top: -5%;">
+                        <img src="images/snapchat_icon.png" alt="snapchat">
+                    </div>
+
+                    <div style="flex: 80%;">
+                        <a href="#">Snapchat</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div style="display: flex; align-content: center;">
+                    <div style="flex: 15%; padding-left: 20%; margin-top: -5%;">
+                        <img src="images/phone_icon.png" alt="phone">
+                    </div>
+
+                    <div style="flex: 80%;">
+                        <a href="#">Phone</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="flex: 80%;">
+            <div class="footer">
+                <footer><a href="mailto:emhinson@eastsideprep.org">Email</a></footer>
+            </div>
+            <div class="footer2">
+                <footer><a href="https://www.youtube.com/watch?v=Y2nEje0JGdQ">Instagram</a></footer>
+            </div>
+            <div class="footer3">
+                <footer><a href="https://www.youtube.com/watch?v=Tt7bzxurJ1I">Snapchat</a></footer>
+            </div>
+            <div class="footer4">
+                <footer>&copy 2022</footer>
+            </div>
+        </div>
+        <div id="clock" style="flex: 5%;"></div>
+    </div>
+
         <script>
+            function byebye() {
+                var x = document.getElementById("nonono")
+                var v = document.getElementById("pop")
+                var w = document.getElementById("about_words_1")
+                var z = document.getElementById("about_words_2")
+                var o = document.getElementById("about_words_3")
+                var s = document.getElementById("space")
+                v.remove();
+                w.innerHTML = "Hello all! I'm Emerson Hinson, a highschool student from Washington state. I currently study at Eastside Prepatory School where I have been and am actively learning how to properly design and program websites like this one. Although I am rather new to the world of web design, I am still an entusiastic learner that wants to improve and keep moving forward.";
+                z.innerHTML = "My interests outside of web design are theater and choir. I have been in my fair share of school theater performances including one called She Kills Monsters. When it comes to choir, I have been doing an outside of school choir (Island Sound) since the second grade and have been doing Chamber Choir at school for a while now. Island Sound is more of a show choir which is something I love, especially with my interest in theater.";
+                o.innerHTML = "In the future I hope to be able to continue doing school theater and keep on singing in my two choirs throughout high school. I also just want to progress in my budding skills and knowledge of web design. Maybe one day I will be able to create something I can be thoroughly proud of (hopefully this project website might be close).";
+                s.remove();
+            }
+
             function button_press() {
-            document.getElementById("start").style.borderTopColor = "black";
-            document.getElementById("start").style.borderLeftColor = "black";
-            document.getElementById("start").style.borderBottomColor = "white";
-            document.getElementById("start").style.borderRightColor = "white";
-            document.getElementById("porfavor1").style.display = "block";
+            var c = document.getElementById("start")
+            var p = document.getElementById("porfavor2")
+            if (p.style.display === "none") {
+                c.style.borderTopColor = "black";
+                c.style.borderLeftColor = "black";
+                c.style.borderBottomColor = "white";
+                c.style.borderRightColor = "white";
+                p.style.display = "block";
+            }
+            else {
+                c.style.borderTopColor = "white"
+                c.style.borderLeftColor = "white";
+                c.style.borderBottomColor = "black";
+                c.style.borderRightColor = "black";
+                p.style.display = "none";
+            }
             }
 
             function startTime() {

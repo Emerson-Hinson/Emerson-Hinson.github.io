@@ -5,9 +5,18 @@ body {
     font-style: normal;
 }
 
+.friend {
+  border-top: ridge 2px white;
+  border-left: ridge 2px white;
+  border-bottom: ridge 2px black;
+  border-right: ridge 2px black;
+  background-color: #bfc0bf;
+}
+
 .bar {
     background: #bfc0bf;
     position: fixed;
+    width: 100%;
     bottom: 0;
     right: 0;
     left: 0;
@@ -60,11 +69,12 @@ footer a {
     font-weight: bolder;
     font-size: 12px;
     height: 25px;
+    width: 22%;
     float: left;
     padding-top: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: 34%;
+    margin-left: 3%;
     cursor: default;
     user-select: none;
 }
@@ -80,6 +90,7 @@ footer a {
   font-weight: bolder;
   font-size: 12px;
   height: 25px;
+  width: 22%;
   float: left;
   padding-top: 5px;
   padding-left: 10px;
@@ -100,6 +111,7 @@ footer a {
   font-weight: bolder;
   font-size: 12px;
   height: 25px;
+  width: 22%;
   float: left;
   padding-top: 5px;
   padding-left: 10px;
@@ -120,6 +132,7 @@ footer a {
   font-weight: bolder;
   font-size: 12px;
   height: 25px;
+  width: 22%;
   float: left;
   padding-top: 5px;
   padding-left: 10px;
@@ -217,6 +230,7 @@ button {
     color: black;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .window {
@@ -230,6 +244,19 @@ button {
     border-left: ridge 2px white;
     border-right: ridge 2px black;
     border-bottom: ridge 2px black;
+}
+
+.first_window {
+  background: #bfc0bf;
+  width: 50%;
+  text-align: left;
+  margin-left: 20%;
+  margin-top: 3%;
+  padding: 10px;
+  border-top: ridge 2px white;
+  border-left: ridge 2px white;
+  border-right: ridge 2px black;
+  border-bottom: ridge 2px black;
 }
 
 .white {
@@ -285,9 +312,26 @@ button {
     }
   }
 
+  .pop_window {
+    margin-left: 15%;
+    margin-top: -28%;
+  }
+
+  .example_work_1 {
+    margin-left: 60%;
+    margin-top: -23%;
+    width: 40%;
+  }
+
+  .example_work_2 {
+    margin-left: 60%;
+    margin-top: -36%;
+    width: 40%;
+  }
+
   .about_window {
       margin-left: -7%;
-      margin-top: -12%;
+      margin-top: -14%;
   }
 
   .case_study_window {
@@ -320,18 +364,63 @@ button {
   .dropup-content {
     display: none;
     position: absolute;
-    bottom: 20px;
+    bottom: 26px;
     background-color: #bfc0bf;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+
+    border-top: 2px solid lightgrey;
+    border-left: 2px solid lightgrey;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
   }
 
   .dropup-content a {
     color: black;
-    padding: 12px 10px;
+    padding: 12px 8px;
     text-decoration: none;
     display: block;
+    text-align: left;
   }
 
 .dropup-content a:hover {background-color: #ddd}
+
+.sidetalk {
+  position: absolute;
+  bottom: 5px;
+  width: 15%;
+  height: 97%;
+  background: gray;
+}
+
+.sidetalk h2 {
+  position: relative;
+}
+
+.window_word {
+  font-weight: bold;
+  color: #bfc0bf;
+  transform: rotate(270deg);
+}
+
+.ninetyfive {
+  color: white;
+  margin-bottom: 55px;
+  margin-top: 105px;
+  transform: rotate(270deg);
+}
+
+.show_works {
+  height: 105%;
+  width: 105%;
+}
+
+.head {
+  height: auto;
+  width: 70%;
+}
+
+#about_words {
+  text-align: left;
+}
