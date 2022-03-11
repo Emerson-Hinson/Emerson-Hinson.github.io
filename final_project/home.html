@@ -60,10 +60,18 @@
 
         <div class="lemme">
             <div style="flex: 100%;">
-                <img src="images/purple_book_icon.png" alt="purple_book_icon">   
+                <a href="child.html">
+                    <img src="images/closed_folder_icon.png" alt="folder">
+                </a>
             </div>
-            <div class="fiftypcent">
-                <p>Xtra</p>
+            <div class="fiftypcent2">
+                <p>Child</p>
+            </div>
+            <div class="fiftypcent2">
+                <p>Emerson</p>
+            </div>
+            <div class="fiftypcent2">
+                <p>Portfolio</p>
             </div>
             
         </div>
@@ -161,7 +169,7 @@
             }
             }
 
-//I learned this from w3schools
+            //I learned this from w3schools
             function startTime() {
             const today = new Date();
             let h = today.getHours();
@@ -171,10 +179,10 @@
             setTimeout(startTime, 1000);
             }
 
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
-}
+            function checkTime(i) {
+            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+            return i;
+            }
 
             var eventListener = window.addEventListener ? "addEventListener" : "attachEvent";
             var clickEvent = eventListener == "attachEvent" ? "onclick" : "click";

@@ -60,10 +60,16 @@
 
         <div class="lemme">
             <div style="flex: 100%;">
-                <img src="images/purple_book_icon.png" alt="purple_book_icon">   
+                <img src="images/closed_folder_icon.png" alt="folder">
             </div>
-            <div class="fiftypcent">
-                <p>Xtra</p>
+            <div class="fiftypcent2">
+                <p>Child</p>
+            </div>
+            <div class="fiftypcent2">
+                <p>Emerson</p>
+            </div>
+            <div class="fiftypcent2">
+                <p>Portfolio</p>
             </div>
             
         </div>
@@ -85,10 +91,10 @@
                             <img src="images/did_you_know_icon.png" alt="did ya know?">
                         </div>
                         <div style="flex: 100%;">
-                            <h2>Did you know...</h2>
-                            <p>Emerson Hinson is my creator. She made me to display her works like the ones to the right of this window.</p>
-                            <p>She wants me to be useful.</p>
-                            <p>But..</p>
+                            <h2 style="font-size: 2vw;">Did you know...</h2>
+                            <p style="font-size: 1.25vw;">Emerson Hinson is my creator. She made me to display her works like the ones to the right of this window.</p>
+                            <p style="font-size: 1.25vw;">She wants me to be useful.</p>
+                            <p style="font-size: 1.25vw;">But..</p>
                         </div>
                     </div>
                     <div style="display: flex;">
@@ -96,13 +102,13 @@
                             <img src="images/did_you_know_icon.png" alt="did ya know?">
                         </div>
                         <div style="flex: 100%;">
-                            <h2>Did you know...</h2>
-                            <p>I'm lonely. It has been a long since anyone has joined me. Well, that was before you came along. I don't want to be alone. It is empty.</p>
+                            <h2 style="font-size: 2vw;">Did you know...</h2>
+                            <p style="font-size: 1.25vw;">I'm lonely. It has been a long since anyone has joined me. Well, that was before you came along. I don't want to be alone. It is empty.</p>
                         </div>
                     </div>
                 </div>
                 <div style="width: 25%; float: inline-end; padding-left: 2%; flex: 25%;">
-                    <h3 id="question">..Would you be my friend?</h3>
+                    <h3 id="question" style="font-size: 1.5vw;">..Would you be my friend?</h3>
                     <button class="friend" id="friend_button" onclick="yayyy()">YES</button>
                     <button class="friend" id="no_friend_button" onclick="nayyy()">NO</button>
                 </div>
@@ -110,14 +116,14 @@
         </div>
 
         <div>
-            <div class="example_work_1">
+            <div id="popgoes" class="example_work_1">
                 <div class="window">
                     <div class="blue">
                         <div class="welcome">
                             <p class="wwe">Show Work</p>
                         </div>
                         <div class="leave">
-                            <p class="ex">X</p>
+                            <p onclick="go_2()" class="ex">X</p>
                         </div>
                     </div>
                     
@@ -133,14 +139,14 @@
             </div>
 
 
-            <div class="example_work_2">
+            <div id="pop" class="example_work_2">
                 <div class="window">
                     <div class="blue">
                         <div class="welcome">
                             <p class="wwe">Show Work</p>
                         </div>
                         <div class="leave">
-                            <p class="ex">X</p>
+                            <p onclick="go()" class="ex">X</p>
                         </div>
                     </div>
                     
@@ -231,6 +237,14 @@
     </div>
 
         <script>
+            function go() {
+                document.getElementById("pop").remove()
+            }
+
+            function go_2() {
+                document.getElementById("popgoes").remove()
+            }
+
             function yayyy() {
                 var y = document.getElementById("friend_button")
                 var z = document.getElementById("no_friend_button")

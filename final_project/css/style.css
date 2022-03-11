@@ -347,15 +347,32 @@ button {
   }
 
   .before {
-    margin-left: 60%;
-    margin-top: -40%;
-    width: 40%;
+    margin-left: 23%;
+    margin-top: -28%;
+    margin-right: 0%;
+    width: 55%;
   }
 
   .after {
-    margin-left: 60%;
-    margin-top: -10%;
-    width: 40%;
+    margin-left: 50%;
+    margin-top: -20%;
+    margin-right: 0%;
+    width: 50%;
+    height: 100%;
+  }
+
+  .child_pics_1 {
+    margin-left: 32%;
+    margin-top: -40%;
+    margin-right: 0%;
+    width: 50%;
+    height: 100%;
+  }
+
+  .child_img {
+    height: auto;
+    width: 100%;
+    padding: 2%;
   }
 
   .baimg {
@@ -369,15 +386,43 @@ button {
   }
 
   .case_study_window {
-      margin-left: -20%;
-      margin-top: -12%;
+      margin-left: -9%;
+      margin-top: -8%;
+      width: 60%;
   }
 
   .portfolio_window {
-    margin-left: 15%;
+    margin: 0;
+    width: 70%;
+  }
+
+  .icant {
+    margin-left: 25%;
+    margin-top: -8%;
     margin-right: 0%;
-    margin-top: 10%;
-    width: 60%;
+    width: 75%;
+    height: 100%;
+  }
+
+  .child_portfolio_window {
+    margin-left: -12%;
+    margin-right: 0%;
+    margin-top: -5%;
+    width: 75%;
+  }
+
+  .file_button {
+    background-color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    display: flex; 
+    flex: 20%; 
+    flex-direction: column; 
+    align-items: center;
   }
 
   .dropup {

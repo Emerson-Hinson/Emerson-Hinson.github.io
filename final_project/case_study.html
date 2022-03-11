@@ -60,10 +60,18 @@
 
         <div class="lemme">
             <div style="flex: 100%;">
-                <img src="images/purple_book_icon.png" alt="purple_book_icon">   
+                <a href="child.html">
+                    <img src="images/closed_folder_icon.png" alt="folder">
+                </a>
             </div>
-            <div class="fiftypcent">
-                <p>Xtra</p>
+            <div class="fiftypcent2">
+                <p>Child</p>
+            </div>
+            <div class="fiftypcent2">
+                <p>Emerson</p>
+            </div>
+            <div class="fiftypcent2">
+                <p>Portfolio</p>
             </div>
             
         </div>
@@ -80,57 +88,78 @@
                 </div>
                 <h1>Walking Through!</h1>
                 <div class="white">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id veritatis accusamus minus saepe nisi quisquam animi beatae voluptatem perferendis, sunt, quas architecto. Sequi explicabo doloremque sit ratione obcaecati eum eius.</p>
+                    <p style="font-size: 1.25vw;">Two other web designers and I worked together to improve this business' website. We changed the color scheme and fonts, made the navbar stand out more as well as look more organized, added a carousel to display their work, and made some before an after comparison photos. We succeeded in achieving what we set out to do and the final website looked more appealing as to draw in customers.</p>
                 </div>
             </div>
         </div>
         <div>
-            <div class="after">
-                <div class="window">
-                    <div class="blue">
-                        <div class="welcome">
-                            <p class="wwe">After</p>
-                        </div>
-                        <div class="leave">
-                            <p class="ex">X</p>
-                        </div>
-                    </div>
-                    
-                    <div style="display: flex;">
-                        <div style="flex: 20%; padding-left: 1%;">
-                            <img src="images/purple_book_icon.png" alt="information_icon" style="height: auto; width: 100%;">
-                        </div>
-                        <div style="flex: 80%; padding-right: 2%; text-align: center; margin-left: -2%; font-size: 1.25vw;">
-                            <img class="baimg" src="images/after_website.png" alt="after">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="before">
+            <div id="elohel" class="before">
                 <div class="window">
                     <div class="blue">
                         <div class="welcome">
                             <p class="wwe">Before</p>
                         </div>
                         <div class="leave">
-                            <p class="ex">X</p>
+                            <p onclick="go_1()" class="ex">X</p>
                         </div>
                     </div>
                     
                     <div style="display: flex;">
-                        <div style="flex: 20%; padding-left: 1%;">
+                        <div style="flex: 15%; padding-left: 1%;">
                             <img src="images/purple_book_icon.png" alt="information_icon" style="height: auto; width: 100%;">
                         </div>
-                        <div style="flex: 80%; padding-right: 2%; text-align: center; margin-left: -2%; font-size: 1.25vw;">
+                        <div style="flex: 85%; padding-right: 2%; text-align: center; margin-left: -2%; font-size: 1.25vw;">
                             <img class="baimg" src="images/before_website.png" alt="before">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+            <div id="oheloh" class="after">
+                <div class="window">
+                    <div class="blue">
+                        <div class="welcome">
+                            <p class="wwe">After</p>
+                        </div>
+                        <div class="leave">
+                            <p onclick="go_2()" class="ex">X</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex;">
+                        <div style="flex: 15%; padding-left: 1%;">
+                            <img src="images/purple_book_icon.png" alt="book" style="height: auto; width: 100%;">
+                        </div>
+                        <div style="flex: 85%; padding-right: 2%; text-align: center; margin-left: -2%; font-size: 1.25vw;">
+                            <img class="baimg" src="images/after_website.png" alt="after">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="pop" class="pop_window" style="margin-top: -15%; margin-left: 0%; width: 60%;">
+            <div class="window">
+                <div class="blue">
+                    <div class="welcome">
+                        <p class="wwe">Information</p>
+                    </div>
+                    <div class="leave">
+                        <p class="ex" id="nonono" onclick="go_3()">X</p>
+                    </div>
+                </div>
+                
+                <div style="display: flex;">
+                    <div style="flex: 15%; padding-left: 1%;">
+                        <img src="images/information_icon.png" alt="information_icon" style="height: auto; width: 100%;">
+                    </div>
+                    <div style="flex: 90%; padding-right: 2%; text-align: center; margin-left: -2%; font-size: 1.25vw;">
+                        <p>This seems meaningless.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
@@ -211,6 +240,18 @@
     </div>
 
         <script>
+            function go_1() {
+                document.getElementById("elohel").style.display = "none";
+            }
+
+            function go_2() {
+                document.getElementById("oheloh").style.display = "none";
+            }
+
+            function go_3() {
+                document.getElementById("pop").remove()
+            }
+
             function button_press() {
             var c = document.getElementById("start")
             var p = document.getElementById("porfavor3")
